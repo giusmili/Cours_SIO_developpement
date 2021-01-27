@@ -1,0 +1,71 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Montserrat',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+/* in this page css theme */
+:root{
+    --color-default: #ccc;
+    --color-primary: #2980b9;
+    --color-success: #27ae60;
+    --color-alert: #c0392b;
+    --color-event: #e67e22;
+    --color-header: #2c3e50;
+}
+header{
+    margin-bottom: 5.0rem;
+}
+header,section h2{
+    background-color: var(--color-header);
+}
+header h1, section h2{
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+    line-height: 8.0rem;
+}
+section h2{
+    line-height: 4.5rem;
+    background-color: var(--color-alert);
+}
+section:nth-child(2) > h2{
+    background-color: var(--color-success);
+}
+header h1::before, header h1::after{
+    content:' - ';
+}
+section, footer{
+    max-width: 80rem;
+    padding: 1.0rem;
+    border: solid 0.1rem transparent;
+    background-color: #fafafa;
+    margin: 0 auto 1rem;
+    box-shadow: 0 0 1.0rem var(--color-header);
+}
+section > p, section ul li{
+    line-height: 2.6rem;
+    padding: .5rem 0;
+}
+footer *{
+    text-align: center;
+}
+.warning{
+    text-align: center;
+    color: var(--color-alert);
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+

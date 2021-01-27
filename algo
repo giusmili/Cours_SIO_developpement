@@ -1,0 +1,79 @@
+
+Algorithme : 
+
+recettes de cuisine
+procédure juridique
+pour un itinéraire
+
+ALGO
+Déclaration,
+Test
+Résultat
+Fin
+
+Les variables : type de var
+ENTIER, 10
+REEL, 	7.5
+BOOLEAN, vrai ou faux
+CARACTERE, "C"
+CHAINE, ""
+
+********************************************
+nombre est ENTIER <- null
+nom est una CHAINE <- ""
+PI est REEL
+
+nombre <- 16
+nom <- Eich
+PI <- 3.5
+
+Une structure de contrôle => conditions
+
+age EST UN ENTIER <- 16
+
+ SI age > 18 ALORS
+ 			AFFICHER("Tu es majeur")
+ FIN SI
+
+SI age > 18 ALORS
+	AFFICHER("Tu es majeur")
+SINON
+	AFFICHER("Tu es mineur")
+
+// itération => boucle
+
+tableau est un" CHAINE <- [
+							produit : "pc",
+							prix : "800",
+							etat : "neuf",
+							photo : "./photo"
+								] clé et valeur
+
+index <- 0
+
+pour index <- 0
+	TANT QUE index < 4
+	SI (index <> photo)
+			AFFICHER tableau[index]
+		SINON
+			AFFICHE photo
+		FIN SI
+
+			index <- index + 1
+
+			fin tant que
+
+//fonction
+ de la matière brute => (argument) afficher 
+
+type = Number
+PROCEDURE addition(nb1, nb2)
+		resultat EST UN ENTIER
+DEBUT
+		resultat <- nb1 + nb2
+		RETURN resultat
+FIN
+
+addition(1, 2)
+
+AFFICHER resultat <- 3
