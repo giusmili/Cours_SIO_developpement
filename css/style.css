@@ -15,6 +15,11 @@ h1,h2,h3,p,ul,ol,figure{
 *{
     box-sizing: border-box;
 }
+button{
+    border: 0;
+    background-color: #ccc;
+    font-size: 1.6rem;
+}
 /* in this page css theme */
 :root{
     --color-default: #ccc;
@@ -61,11 +66,31 @@ section > p, section ul li{
 footer *{
     text-align: center;
 }
-.warning{
+.warning, .success{
     text-align: center;
     color: var(--color-alert);
     line-height: 2.5rem;
     cursor: pointer;
 }
-
+.header_class{
+    filter:grayscale(100%);
+}
+.success{
+    color: var(--color-success);
+}
+section button{
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    line-height: 3.5rem;
+    background-color: var(--color-success);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+section p{
+    display: none;
+    text-align: center;
+}
 
