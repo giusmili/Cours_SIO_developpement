@@ -93,4 +93,32 @@ section p{
     display: none;
     text-align: center;
 }
-
+figure{
+    max-width: 40rem;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+figure .dark{
+    display: inline-block;
+    /* filter */
+    filter: grayscale(100%);
+    transition-duration: 0.7s;
+}
+figcaption h2{
+    cursor: pointer;
+    color: #222;
+}
+figure .light{
+    filter: grayscale(0);
+    transition-duration: 0.7s;
+}
+.bglight{
+    background-color: #fff;
+    color: #222;
+    transition-duration: 0.8s;
+}
+.bgdark{
+    background-color: #222;
+    
+}
