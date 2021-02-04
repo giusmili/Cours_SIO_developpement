@@ -2,10 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&display=swap');
 html{
     font-size: 62.5%;
+    
 }
 body{
     font: 1.6rem 'Montserrat',sans-serif;
     margin: 0;
+    overflow-x: hidden;
+    background: rgb(127, 172, 240);
+    animation: sky 3s infinite alternate-reverse;
+   
+
+}
+@keyframes sky{
+    from{
+        background: rgb(127, 172, 240);
+    }
+    to{
+        background: rgb(33, 103, 207);
+    }
 }
 h1,h2,h3,p,ul,ol,figure{
     margin: 0;
@@ -114,10 +128,53 @@ figure .light{
     transition-duration: 0.7s;
     
 }
+figure .anim{
+    animation: led 2s linear infinite;
+}
+@keyframes led{
+    0%{
+        filter: grayscale(0); 
+    }
+    10%{
+        filter: grayscale(100%);
+    }
+    20%{
+        filter: contrast(150%);
+    }
+    30%{
+        filter: invert(25%);
+    }
+    40%{
+        filter: saturate(20%);
+    }
+    50%{
+        filter: sepia(60%);
+    }
+}
 .bglight{
     background-color: #fff;
     
     transition-duration: 0.8s;
+}
+.random{
+    animation: bgc 1s linear infinite;
+}
+section p{
+    display: block;
+}
+@keyframes bgc{
+    0%{
+        background: rgb(0, 0, 0);
+    }
+    10%{
+        background: rgb(218, 14, 14);
+    }
+    20%{
+        background-color: rgb(214, 214, 24);
+    }
+    30%{
+        background-color: #fff;
+    }
 }
 .bgdark{
     background-color: #222;
@@ -131,4 +188,62 @@ figure .light{
 }
 .slide-on{
     transform: translateX(0);
+}
+.picture{
+
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+.icone, .icone_1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10.0rem;
+    transform: translateX(200rem);
+    animation: duck 4s linear infinite;
+    z-index: 1;
+    
+}
+.icone_1{
+    top: 40%;
+    left: 40%;
+    animation: duck 3s linear infinite alternate-reverse;
+    
+}
+@keyframes duck{
+    from{
+        transform: translateX(200rem)rotate(0deg);
+    }
+    to{
+        transform: translateX(-200rem)rotate(360deg);
+    }
+}
+
+.icone img, .icone_1 img{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.picture img{
+    display: inline-block;
+    max-width: 100%;
+    cursor: pointer;
+
+}
+.arret{
+    animation-play-state: paused;
+}
+.alert_warning{
+    background-color: rgb(92, 5, 5);
+    max-width: 40rem;
+    left: 2.6rem;
+    padding: .8rem;
+    margin: 0 auto 1.0rem;
+}
+section p{
+    cursor: pointer;
 }
