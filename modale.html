@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modale</title>
+    <link rel="stylesheet" href="./css/modale.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to...</h1>
+        <code><!--<a href="#modal">-->Afficher la fenêtre<!--</a>--></code>
+    </header>
+    <main>
+        <section class="fullscreen-modal" id="modal">
+            <figure>
+                <a href="#" title="closed" aria-hidden="true">&times;</a>
+                <img src="./asset/treck.jpg" alt="Star Trek">
+                <figcaption>
+                    <h2>Star Trek</h2>
+                    <p>
+                        <!--la date année mois jour: Y,m,d-->
+                        <time>Date de sortie: </time>
+                    </p>
+                </figcaption>  
+            </figure>
+        </section>
+    </main>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
