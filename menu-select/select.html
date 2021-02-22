@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu select</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Menu select</h1>
+    </header>
+    <main>
+        <!-- élément virtuel -->
+        <fieldset>
+            <legend>Choisissez votre pays</legend>
+        <form action="" method="get">
+            <div class="select-style" role="menu">
+                <select name="liste" id="menu" aria-required="true">
+                    <optgroup label="Europe">
+                        <option value="">Faites votre choix</option>
+                        <option value="France">France</option>
+                        <option value="Suisse">Suisse</option>
+                    </optgroup>
+
+                    <optgroup label="Amérique">
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexique">Mexique</option>
+                    </optgroup>
+
+                </select>
+
+            </div>
+
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; - MIT - </p>
+    </footer>
+    <script src="./js/app-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3{
+    margin: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    line-height: 6.0rem;
+}
+
+fieldset{
+    max-width: 80rem;
+    margin:5rem auto;
+    border: solid .1rem #ccc;
+    border-radius: .8rem;
+}
+
+
+
+
+.select-style {
+    padding: 1rem;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+   
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: inherit;
+}
+
+.select-style:after {
+    top: 50%;
+    right: 1%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+select option{
+    line-height: 4.5rem;
+}

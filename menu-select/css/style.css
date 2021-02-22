@@ -1,0 +1,131 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p{
+    margin: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme */
+header h1{
+    text-align: center;
+    line-height: 6rem;
+}
+fieldset,section{
+    max-width: 80rem;
+    margin: 5rem auto 1.0rem;
+    border: solid .1rem #ccc;
+    border-radius: .8rem;
+}
+section{
+    padding: 1rem;
+}
+/* CSS for select */
+.select-style{
+    padding: 1rem;
+    margin: 0;
+    border: .1rem solid #ccc;
+    width: auto;
+    border-radius: .3rem;
+    overflow: hidden;
+    background-color: #fafafa;
+    position: relative;
+}
+.select-style select{
+    padding: .5rem .8rem;
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: inherit;
+
+}
+.select-style:after{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-color: rgba(0,0,0,0);
+    border-top-color: #000;
+    border-width: .5rem;
+    margin-top: -.2rem;
+    z-index: 100;
+}
+.select-style select:focus{
+    outline: none;
+}
+select option{
+    line-height: 4.5rem;
+}
+footer *{
+    text-align: center;
+}
+.warning{
+    max-width: 40rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ccc;
+    text-align: center;
+    display: none;
+    line-height: 3.5rem;
+}
+.success{
+    background-color: rgb(10, 149, 73);
+    color: #fff;
+    display: block;
+}
+.alert{
+    background-color: rgb(194, 11, 11);
+    color: #fff;
+    display: block;
+}
+/* try catch css */
+form input, section .btn-activate{
+    display: block;
+    width: 100%;
+    margin-bottom: .3rem;
+}
+form input[type="submit"], section .btn-activate{
+    line-height: 4rem;
+    text-align: center;
+    border: solid .1rem transparent;
+    background-color: #448AFF;
+    color: #fff;
+    border-radius: .4rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+section .btn-activate{
+    text-decoration: none;
+    margin: 0 auto;
+    width: 20rem;
+
+}
+form input[type="number"]{
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    padding: .5rem;
+}
+form label{
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+fieldset legend{
+    padding: .5rem;
+    font-size: 2rem;
+}
