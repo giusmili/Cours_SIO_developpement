@@ -1,0 +1,143 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600');
+html{
+    font-size: 62.5%;
+    margin: 0;
+}
+body{
+    font: 1.6rem 'Dosis',sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,p,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+/* theme */
+
+:root{
+    --color-form: #fafafa;
+    --color-button: #004ECC;
+    --color-warning: #c80000;
+    --color-border: rgba(204, 204, 204, 0.678);
+}
+header h1{
+    line-height: 6.0rem;
+    text-align: center;
+    font-weight: normal;
+    
+}
+header h1 strong{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+main{
+    max-width: 70rem;
+    margin: 5.0rem auto 2.0rem;
+    padding: 1.0rem;
+}
+main section{
+    border: solid var(--color-border) 0.1rem;
+    padding: .5rem;
+    background-color: var(--color-form);
+}
+/* icone */
+main section a::before{
+    content: '\f023';
+    font-family: 'FontAwesome';
+    vertical-align: - 0.1rem;
+    margin-right: .5rem;
+}
+main section .unlocked::before{
+    content: '\f09c';
+    font-family: 'FontAwesome';
+    vertical-align: - 0.1rem;
+    margin-right: .5rem;
+}
+
+main section h2{
+    font-weight: 300;
+    text-align: center;
+}
+main section a, .form input[type="submit"]{
+    line-height: 4.5rem;
+    text-align: center;
+    display: block;
+    width: 35rem;
+    margin: 1.0rem auto;
+    background-color: var(--color-button);
+    color: #fff;
+    border-radius: .4rem;
+    font-size: inherit;
+}
+.form{
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.form p{
+    width: 30rem;
+    line-height: 3.5rem;
+    padding: .8rem;
+    background-color: var(--color-warning);
+    text-align: center;
+    color: #fff;
+    margin:1.0rem auto;
+    display: none;
+}
+.form .success{
+    background-color: rgb(36, 153, 20);
+    display: block;
+}
+.appear{
+    z-index: 1;
+    opacity: initial;
+}
+.form fieldset{
+    padding: 1.0rem;
+    border-radius: .4rem;
+    border: solid .1rem var(--color-border);
+    background-color: var(--color-form);
+}
+.form fieldset legend{
+    padding: .5rem;
+    font-size: 2rem;
+}
+.form input, .form label{
+    display: block;
+    width: 100%;
+    line-height: 4.5rem;
+}
+.form input{
+    border: solid .1rem var(--color-border);
+    padding: .5rem;
+    transition: all 0.5s ease-in-out;
+}
+.form input:focus{
+    box-shadow: 0 0 1.0rem var(--color-warning);
+    outline: 0;
+
+}
+.form input[placeholder], input[type="submit"]{
+    font-size: inherit;
+}
+.form input[type="submit"]{
+    margin-top: 1.0rem;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+footer *{
+    text-align: center;
+}

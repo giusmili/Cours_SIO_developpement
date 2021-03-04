@@ -55,6 +55,16 @@ header h1, section h2{
     text-align: center;
     line-height: 8.0rem;
 }
+section ul li img, figure img{
+    display: block;
+    width: 100%;
+}
+figure li h2{
+    color: #fff;
+}
+figure ul li + li{
+    text-align: left;
+}
 section h2{
     line-height: 4.5rem;
     background-color: var(--color-alert);

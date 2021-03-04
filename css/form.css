@@ -50,18 +50,18 @@ section{
 section h2{
     text-align: center;
 }
-.form input, .form label{
+.form input, .form label, fieldset input, fieldset label{
     display: block;
     width: 100%;
     margin-bottom: 1rem;
 
 }
-.form input{
+.form input, fieldset input{
     border: solid .1rem #ccc;
     line-height: 3.5rem;
     padding: .5rem;
 }
-.form input[placeholder]{
+.form input[placeholder],fieldset input[placeholder]{
     font-size: 1.6rem;
 }
 /* submit */

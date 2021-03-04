@@ -1,0 +1,33 @@
+const createUser = (nom, age, ...skills)=>{
+		return {
+				user: `Name: ${nom},
+				age: ${age}`,
+				skills: skills
+			};
+		}
+	const newUser = createUser("Alan",57, "Data", true, 12.67)
+	console.table(newUser.skills)
+    
+
+
+
+
+/* 
+    object
+        constructeur
+        méthode 
+    */
+    let user = {
+        constructeur(nom, prenom){
+            this.nom = nom;
+            this.prenom = prenom;
+        },
+        getOut(){
+            return this.nom+" "+this.prenom
+        }
+    }
+
+    let newUser = Object.create(user)
+    newUser.constructeur("Jule","César")//appel du constructeur pour afficher à nouvel utilisateur
+    let affiche = newUser.getOut()
+    console.log(affiche)

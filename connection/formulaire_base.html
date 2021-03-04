@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1><strong>insight</strong> : accès membres </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Accèder à votre espace</h2>
+            <a href="#" title="Accéder à votre espace">Accèder ici</a>
+        </section>
+       <div class="form" role="form">
+          
+           <fieldset>
+               <legend>Remplir le formulaire</legend>
+            <form action="formulaire_base.html" method="get">
+                <label for="email">Votre email</label>
+                <input type="text" name="mail" placeholder="Votre mail" id="email" aria-required="true" autofocus>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" placeholder="Mot de passe" id="password" aria-required="true">
+                <input type="submit" value="Se connecter à votre espace">
+            </form>
+        </fieldset>
+       </div>
+
+    </main>
+    <footer>
+        <p>&copy; - MIT - 2021</p>
+    </footer>
+    <script src="./js/app_form.js"></script>
+</body>
+</html>
